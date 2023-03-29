@@ -9,7 +9,7 @@ SELECT * from animals WHERE neutered=true;
 SELECT * from animals WHERE name != 'Gabumon';
 SELECT * from animals WHERE weight_kg >=10.4 AND weight_kg <= 17.3;
 
-
+-- Updating the table with Transactions
 BEGIN;
 UPDATE animals SET species = 'digimon' WHERE name LIKE '%mon';
 UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
