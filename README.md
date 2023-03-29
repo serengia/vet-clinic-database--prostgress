@@ -74,7 +74,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments <a name="acknowledgements"></a>
 
-- Hat tip to anyone who inspired this project
+- The Web App design was inspired by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 
 ## 📝 License <a name="license"></a>
 
