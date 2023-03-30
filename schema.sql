@@ -30,7 +30,7 @@ ROLLBACK;
 -- Add references to the parent table
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id); 
-ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owner(id);
+ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
 
         
 
