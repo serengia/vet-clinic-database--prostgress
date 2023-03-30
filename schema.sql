@@ -27,6 +27,16 @@ BEGIN;
 DELETE FROM animals;
 ROLLBACK;
 
+-- Create more tables
+CREATE TABLE owners(
+    id BIGSERIAL PRIMARY KEY, 
+    full_name VARCHAR(50) NOT NULL, 
+    age INT NOT NULL);
+
+CREATE TABLE species(
+    id BIGSERIAL PRIMARY KEY, 
+    name VARCHAR(50) NOT NULL);
+    
 -- Add references to the parent table
 ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id); 
