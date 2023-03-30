@@ -60,7 +60,12 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- FUTURE FEATURES -->
 
-## Future features
+## Key features <a name="key-features"></a>
+
+- Query animals, owners, and species tables.
+- Implement aggregations on data
+
+## Future features <a name="future-features"></a>
 
 - Add "join table" for visits.
 - Implement database performance audit.
