@@ -42,5 +42,26 @@ ALTER TABLE animals DROP COLUMN species;
 ALTER TABLE animals ADD COLUMN species_id INT REFERENCES species(id); 
 ALTER TABLE animals ADD COLUMN owner_id INT REFERENCES owners(id);
 
+--CREATE TABLE VETS
+CREATE TABLE vets (
+        id BIGSERIAL PRIMARY KEY, 
+        name VARCHAR(50) NOT NULL,
+        age INT NOT NULL,
+        date_of_graduation DATE NOT NULL
+);
+
+CREATE TABLE specializations (
+        id BIGSERIAL PRIMARY KEY, 
+        vets_id INT REFERENCES vets(id), 
+        species_id INT REFERENCES species(id)
+);
+
+CREATE TABLE visits (
+    id BIGSERIAL PRIMARY KEY,
+    animals_id INT REFERENCES animals(id),
+    vets_id INT REFERENCES vets(id),
+    visit_date DATE NOT NULL
+);
+
         
 
