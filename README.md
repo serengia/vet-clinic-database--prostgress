@@ -24,12 +24,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
+
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Setup](#setup)
+
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -70,6 +68,25 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Add "join table" for visits.
 - Implement database performance audit.
 - Add database schema diagram.
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+In order to run this project you need:
+
+- [PostgreSQL](https://www.postgresql.org/download/)
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  git clone git@github.com:serengia/vet-clinic-database--prostgress.git
+  cd vet-clinic-database--prostgress
+```
 
 <!-- CONTRIBUTING -->
 
