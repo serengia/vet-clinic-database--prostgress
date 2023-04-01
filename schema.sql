@@ -63,5 +63,7 @@ CREATE TABLE visits (
     visit_date DATE NOT NULL
 );
 
+
+
         
 

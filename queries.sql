@@ -64,3 +64,14 @@ JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winch
 
 SELECT owners.full_name AS owners_name, COUNT(animals.name) AS animal_count FROM animals  
 JOIN owners ON animals.owner_id = owners.id GROUP BY owners.full_name ORDER BY COUNT(animals.name) DESC LIMIT 1; 
+
+-- Multi joined table queries 
+SELECT animals.name AS animal_name, vets.name AS vet, visits.visit_date AS visit_data 
+FROM animals JOIN vets ON animals.owner_id = vets.id 
+JOIN visits ON visits.vets_id = animals.owner_id 
+WHERE vets.name = 'William Tatcher' ORDER BY visits.visit_date DESC LIMIT 1;
+
+SELECT vets.name, COUNT(DISTINCT visits.animals_id) FROM vets 
+JOIN visits ON vets.id = visits.vets_id WHERE vets.name ='Stephanie Mendez' 
+GROUP BY vets.name;
+
