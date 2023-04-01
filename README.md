@@ -36,8 +36,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-**Vet clinic database** is a...
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
