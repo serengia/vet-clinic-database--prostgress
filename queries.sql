@@ -75,3 +75,34 @@ SELECT vets.name, COUNT(DISTINCT visits.animals_id) FROM vets
 JOIN visits ON vets.id = visits.vets_id WHERE vets.name ='Stephanie Mendez' 
 GROUP BY vets.name;
 
+SELECT vets.name AS vet_name, species.name AS species_name, specializations.vets_id AS specialization_id FROM vets 
+LEFT JOIN specializations ON vets.id = specializations.vets_id LEFT JOIN species 
+ON species.id = specializations.species_id;
+
+SELECT animals.name AS animal_name, visits.visit_date AS visit_date, vets.name AS vet_name 
+FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id 
+WHERE visit_date BETWEEN '2020-04-01' AND '2020-08-30' ORDER BY visit_date DESC;
+
+SELECT visits.animals_id, animals.name AS animal_name, COUNT(visits.visit_date) AS count FROM visits JOIN animals 
+ON animals.id = visits.animals_id GROUP BY animals.name, visits.animals_id ORDER BY count DESC LIMIT 1;
+
+
+SELECT vets.name AS vets_name, visits.visit_date AS visit_date, animals.name AS animal_name 
+FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id 
+WHERE vets.name ='Maisy Smith' ORDER BY visits.visit_date DESC LIMIT 1;
+
+SELECT animals.name AS animal_name, visits.visit_date AS visit_date, vets.name AS vet_name 
+FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id 
+ORDER BY visit_date DESC LIMIT 1;
+
+WITH view AS (SELECT S.name, V.name AS vet FROM vets V 
+FULL JOIN visits Vi ON  V.id = Vi.vets_id FULL JOIN specializations SV ON SV.vets_id = V.id 
+FULL JOIN species S ON S.id = SV.species_id WHERE S.name is NULL) 
+SELECT vet, COUNT(vet) FROM view GROUP BY vet;
+
+SELECT V.name AS vet ,S.name AS species,  COUNT(S.name) AS count 
+FROM vets V FULL JOIN visits Vi ON  V.id = Vi.vets_id 
+FULL JOIN animals A ON Vi.animals_id = A.id 
+FULL JOIN species S ON S.id = A.species_id 
+GROUP BY S.name,V.name HAVING V.name = 'Maisy Smith' ORDER BY count DESC LIMIT 1;
+
