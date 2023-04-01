@@ -81,7 +81,7 @@ ON species.id = specializations.species_id;
 
 SELECT animals.name AS animal_name, visits.visit_date AS visit_date, vets.name AS vet_name 
 FROM animals JOIN visits ON animals.id = visits.animals_id JOIN vets ON vets.id = visits.vets_id 
-WHERE visit_date BETWEEN '2020-04-01' AND '2020-08-30' ORDER BY visit_date DESC;
+WHERE vets.name = 'Stephanie Mendez' AND visit_date BETWEEN '2020-04-01' AND '2020-08-30' ORDER BY visit_date DESC;
 
 SELECT visits.animals_id, animals.name AS animal_name, COUNT(visits.visit_date) AS count FROM visits JOIN animals 
 ON animals.id = visits.animals_id GROUP BY animals.name, visits.animals_id ORDER BY count DESC LIMIT 1;
