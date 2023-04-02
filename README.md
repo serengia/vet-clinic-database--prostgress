@@ -2,7 +2,7 @@
 
 # 📖 Vet Clinic Database - Postgres <a name="about-project"></a>
 
-> This project involves the use of a relational database to create the initial data structure for a vet clinic. After that I created a table to store animals' information, insert some data into it, and queried it using different SQL queries.
+This project involves the use of a relational database to create the initial data structure for a vet clinic. After that I created a table to store animals' information, insert some data into it, and queried it using different SQL queries.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 - Use [schema.sql](./schema.sql) to create all tables.
 - Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database.
 
 <a name="readme-top"></a>
 
@@ -24,12 +24,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
+
   - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+  - [Setup](#setup)
+
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -37,8 +35,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
-
-**Vet clinic database** is a...
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -60,6 +56,36 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- FUTURE FEATURES -->
 
+## Key features <a name="key-features"></a>
+
+- Query animals, owners, and species tables.
+- Implement aggregations on data
+
+## Future features <a name="future-features"></a>
+
+- Add "join table" for visits.
+- Implement database performance audit.
+- Add database schema diagram.
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+### Prerequisites
+
+In order to run this project you need:
+
+- [PostgreSQL](https://www.postgresql.org/download/)
+
+To get a local copy up and running, follow these steps.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  git clone git@github.com:serengia/vet-clinic-database--prostgress.git
+  cd vet-clinic-database--prostgress
+```
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -79,7 +105,5 @@ Give a ⭐️ if you like this project!
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <a name="readme-top"></a>
