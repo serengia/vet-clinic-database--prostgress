@@ -42,6 +42,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Postgres and SQL.
 
+### Database schema
+
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
