@@ -42,7 +42,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 > Postgres and SQL.
 
-### Database schema
+## Database schema
+![drawSQL-vet-clinic-export-2023-04-06](https://user-images.githubusercontent.com/69452516/230264658-2eaedc77-4c2e-4ce1-993d-bb6391be96b4.png)
 
 <!-- AUTHORS -->
 
